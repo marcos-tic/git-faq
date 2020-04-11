@@ -1,3 +1,5 @@
+![](https://github.com/marcos-tic/git-faq/blob/master/git-768x478.webp)
+
 # git-faq
 Tutorial de como usar o Git
 
