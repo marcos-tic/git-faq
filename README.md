@@ -12,7 +12,7 @@ Neste tutorial, vamos falar sobre um dos sistemas de controle de versão mais us
 
 Conteúdo
 
-    O que é GIT?
+O que é GIT?
     1º Passo – Instalar o GIT em Sistemas Diferentes
     2º Passo – Como Usar o GIT
     Fluxo de trabalho
@@ -89,9 +89,10 @@ Fedora (yum/dnf):
 Você pode baixar pacotes do GIT usando yum e dnf.
 
     Abra o terminal e execute os seguintes comandos:
-
+~~~
     Sudo dnf install git
     Sudo yum install git
+~~~
 
     Verifique se a instalação ocorreu com sucesso usando git --version.
     Execute os seguintes comandos no terminal para configurar seu e-mail e nome de usuário que serão associados à sua conta GIT:
