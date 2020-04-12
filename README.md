@@ -1,7 +1,7 @@
 ![Git](https://github.com/marcos-tic/git-faq/blob/master/git-768x478.webp)
 
 # Como usar Git & Github#
-___
+
 
 
 
@@ -12,9 +12,10 @@ Os sistemas de controle de versão são uma ótima forma de prevenir que você a
 
 Neste tutorial, vamos falar sobre um dos sistemas de controle de versão mais usados no mundo ​​- o GIT. Você aprenderá o básico do GIT, por exemplo, como instalar o GIT em sistemas diferentes e como usá-lo corretamente.
 
-Conteúdo
+## Conteúdo
 
-O que é GIT?
+### O que é GIT?
+
     1º Passo – Instalar o GIT em Sistemas Diferentes
     2º Passo – Como Usar o GIT
     Fluxo de trabalho
