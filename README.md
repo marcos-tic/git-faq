@@ -21,7 +21,7 @@ Neste tutorial, vamos falar sobre um dos sistemas de controle de versão mais us
     Fluxo de trabalho
     Conclusão
 
-O que é GIT?
+## O que é GIT?
 
 Em 2005, Linus Torvalds (o homem conhecido por criar o núcleo, ou kernel, do SO Linux) desenvolveu o GIT, que desde então tem sido ativamente mantido por Junio ​​Hamano, um engenheiro de software japonês. Atualmente, o GIT é um dos mais famosos sistemas de controle de versão de código aberto e milhões de projetos no mundo inteiro o utilizam para seu controle de versão (incluindo projetos comerciais e de código aberto). O Git é totalmente grátis e pode ser instalado em Mac, Linux, Windows e Solaris diretamente do site oficial . Algumas das características essenciais do GIT são:
 
@@ -40,10 +40,10 @@ Instalar o GIT no Windows:
 
 Instalar o GIT no Windows é tão simples como baixar um instalador e executá-lo. Execute os seguintes passos para instalar o GIT no Windows:
 
-    Acesse o site oficial e faça o download do instalador do GIT para Windows.
-    Depois de baixado, clique duas vezes no arquivo para iniciar o assistente de instalação. Basta seguir as instruções na tela, clicando em Next. Ao término, clique em Finish para concluir com êxito a instalação.
-    git install windows
-    Abra o prompt de comando e digite os seguintes comandos no terminal:
+Acesse o site oficial e faça o download do instalador do GIT para Windows.
+Depois de baixado, clique duas vezes no arquivo para iniciar o assistente de instalação. Basta seguir as instruções na tela, clicando em Next. Ao término, clique em Finish para concluir com êxito a instalação.
+git install windows
+Abra o prompt de comando e digite os seguintes comandos no terminal:
 
 git config --global user.name "João Silva"
 git config --global user.email "exemplo@seuemail.com.br"
