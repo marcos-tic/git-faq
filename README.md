@@ -1,6 +1,6 @@
 ![Git](https://github.com/marcos-tic/git-faq/blob/master/git-768x478.webp)
 
-#**Como usar Git & Github **
+**#Como usar Git & Github
 ___
 
 
