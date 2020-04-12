@@ -45,8 +45,10 @@ Depois de baixado, clique duas vezes no arquivo para iniciar o assistente de ins
 git install windows
 Abra o prompt de comando e digite os seguintes comandos no terminal:
 
+~~~
 git config --global user.name "João Silva"
 git config --global user.email "exemplo@seuemail.com.br"
+~~~
 
 Nota: Lembre de substituir João Silva e exemplo@seuemail.com.br com seus dados. Qualquer commit criado posteriormente será associado à esses dados.
 GIT instalado no Windows com sucesso!
@@ -67,8 +69,10 @@ Se você obtiver uma resposta como git version 2.7.0 (Apple Git-66), então voc�
     Tente novamente o comando git --version para confirmar se a instalação foi bem sucedida.
     Execute os seguintes comandos no terminal para configurar seu e-mail e nome de usuário que serão associados à sua conta GIT:
 
+~~~
 git config --global user.name "João Silva"
 git config --global user.email "exemplo@seuemail.com.br"
+~~~
 
 Nota: Lembre-se de substituir João Silva e exemplo@seuemail.com.br com seus dados. Qualquer commit criado posteriormente será associado à esses dados.
 Instalar o GIT no Linux:
