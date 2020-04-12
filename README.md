@@ -1,10 +1,12 @@
 ![Git](https://github.com/marcos-tic/git-faq/blob/master/git-768x478.webp)
 
-#Como usar Git & Github#
+# Como usar Git & Github#
 ___
 
 
-**Introdução ao GIT**
+
+## **Introdução ao GIT**
+___
 
 Os sistemas de controle de versão são uma ótima forma de prevenir que você arranque seus cabelos sempre que tentar analisar as alterações feitas em um código de projeto compartilhado. Simplificando, um VCS (sigla para version control system) é um componente fundamental do sistema de gerenciamento de configuração de software que cuida das mudanças que precisam ser feitas em um projeto. As alterações/revisões/ atualizações feitas são identificáveis ​​através de códigos de letra ou números. Informações como data e a identidade do autor da alteração também são mantidas.
 
