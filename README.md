@@ -52,7 +52,9 @@ Instalar o GIT no MacOS:
 
 Existem muitas maneiras de instalar o GIT em um Mac. Inclusive, há uma chance de que o GIT já esteja no seu computador se você tiver o XCode instalado. Execute o seguinte comando no terminal para verificar:
 
+~~~
 git --version
+~~~
 
 Se você obtiver uma resposta como git version 2.7.0 (Apple Git-66), então você está com sorte. Caso você não tenha resposta, execute os seguintes passos:
 
@@ -73,16 +75,16 @@ Se você é um usuário Linux, então deve estar acostumado com instalar program
 Para usuários Debian/Ubuntu (apt-get):
 
     Abra o terminal e execute os seguintes comandos:
-
+~~~
     Sudo apt-get update 
     Sudo apt-get install git
-
+~~~
     Verifique se a instalação ocorreu com sucesso usando git --version.
     Execute os seguintes comandos no terminal para configurar seu e-mail e nome de usuário que serão associados à sua conta GIT:
-
+~~~
     git config --global user.name "João Silva" 
     git config --global user.email "exemplo@seuemail.com.br"
-
+~~~
 Nota: Lembre-se de substituir João Silva e exemplo@seuemail.com.br com seus dados. Qualquer commit criado posteriormente será associado à esses dados.
 Fedora (yum/dnf):
 
@@ -97,8 +99,10 @@ Você pode baixar pacotes do GIT usando yum e dnf.
     Verifique se a instalação ocorreu com sucesso usando git --version.
     Execute os seguintes comandos no terminal para configurar seu e-mail e nome de usuário que serão associados à sua conta GIT:
 
+~~~
     git config --global user.name "João Silva"
     git config --global user.email "exemplo@seuemail.com.br"
+~~~
 
 Nota: Lembre-se de substituir João Silva e exemplo@seuemail.com.br com seus dados. Qualquer commit criado posteriormente será associado à esses dados.
 2º Passo – Como Usar o GIT
@@ -110,11 +114,14 @@ Um repositório é o maior bem de qualquer projeto controlado por versão. Para 
 
 Por outro lado, se você já tem um diretório e deseja verificar (clone-lo), você pode usar o comando git clone. Se você estiver tentando verificar um repositório local, use o seguinte comando:
 
+~~~
 git clone /path/to/local/repository
+~~~
 
 Se você pretende verificar um repositório armazenado remotamente, use:
-
+~~~
 git clone user.name@host:/path/to/remote/repository
+~~~
 
 Se você tem uma conta na Hostinger, você pode facilmente clonar e gerenciar repositórios via Painel de Controle > GIT. Por exemplo, se você quer clonar um repositório GIT, basta digitar seu endereço, escolher um ramo e instalar o caminho, e clicar no botão criar.
 
@@ -130,11 +137,15 @@ Os comandos Add e Commit:
 
 Alterações ou adições de arquivos propostas são adicionadas ao índice usando o comando add. Para adicionar qualquer arquivo, o comando é:
 
+~~~
 git add <nome_do_arquivo>
+~~~
 
 Se você está realmente confiante o suficiente para fazer essas mudanças no HEAD, então você pode usar o comando commit:
 
+~~~
 git commit –m “Adicionar qualquer mensagem sobre o commit aqui”
+~~~
 
 Nota: Uma vez que o comando commit é executado (a partir do diretório de trabalho), o arquivo fica comprometido com o HEAD, mas ainda não é enviado para o repositório remoto.
 Dando continuidade com as mudanças
@@ -145,7 +156,9 @@ Uma vez que o git push origin master é executado de dentro do diretório de tra
 
 Se, no entanto, um repositório existente ainda não tiver sido clonado e você pretente estabelecer uma ligação entre o seu repositório e um servidor remoto, execute o seguinte comando:
 
+~~~
 git remote add origin <servidor>
+~~~
 
 Nota: Substitua <servidor> pelo endereço do servidor remoto.
 Uma vez clonado, quaisquer alterações feitas serão aplicadas para o servidor pertinente.
@@ -156,21 +169,29 @@ Outra característica brilhante (mas avançada) do GIT é sua capacidade de perm
 
 Um novo branch pode ser criado usando o seguinte comando:
 
+~~~
 git checkout -b feature_n *
+~~~
 
 feature_n é o nome do branch.
 
 Se você deseja retornar ao master branch, o seguinte comando pode ser usado:
 
+~~~
 git checkout master
+~~~
 
 Qualquer branch pode ser excluído usando o seguinte comando:
 
+~~~
 git checkout -b feature_n
+~~~
 
 Para tornar o branch disponível para outros usuários, você terá que movê-lo para o repositório remoto. Para fazer isso, use o seguinte comando:
 
+~~~
 git push origin feature_n
+~~~
 
 Atualizando e dando merge
 
@@ -180,47 +201,62 @@ Para mesclar outro branch (dar um merge) no atualmente ativo, use: git merge fea
 
 Se você der um merge ou pull, o GIT sempre tenta lidar com os conflitos por conta própria, mas as vezes não consegue. Em caso de falha devido a conflitos, o usuário tem que resolver os conflitos manualmente. Depois de editar os arquivos (para erradicar conflitos), marque-os como merged usando:
 
+~~~
 git add <nome.arquivo>
+~~~
 
 Se antes do merge você desejar visualizar as alterações, o seguinte comando pode ser executado:
 
+~~~
 git diff <nome_branch_origem> <nome_branch_alvo>
+~~~
 
 Tagging
 
 Antes de lançar atualizações/alterações de software, é sempre recomendado criar tags. Para fazer isso no GIT, use o seguinte comando:
 
+~~~
 git tag 1.1.0 1c2d2d56fa
+~~~
 
 O 1c2d2d56fa no comando acima refere-se aos primeiros 10 caracteres do commit-id que é referenciado com a tag. O ID de commit pode ser encontrado no log.
 Log
 
 O histórico do repositório pode ser estudado através do log. O comando git log recupera as informações. Para recuperar os commits feitos por um único usuário, você pode usar:
 
+~~~
 git log --author =Smith
+~~~
 
 Uma versão compactada do log (um commit por linha) pode ser visualizada usando:
 
+~~~
 git log --pretty=oneline
+~~~
 
 Para exibir somente os arquivos que foram alterados:
 
+~~~
 git log --name-status
+~~~
 
 Substituindo alterações locais
 
 Se você acabou fazendo bagunça e precisa reverter as alterações feitas em qualquer arquivo, faça isso usando o seguinte comando:
 
+~~~
 git checkout -- <nomedoarquivo>
+~~~
 
 Isso substituirá as alterações da árvore de trabalho pelos últimos dados presentes no HEAD. Quaisquer alterações que já tenham sido adicionadas ao índice não serão prejudicadas.
 
 Por outro lado, se todas as alterações/commits locais devem ser eliminados e o master branch local for necessário para apontar para o histórico mais recente do servidor, execute os seguintes comandos:
 
+~~~
 git fetch origin
 
 git reset --hard origin/master
-
+~~~
 Conclusão
 
 No mundo de projetos de software, é sempre reconfortante saber que alguém está cuidando de toda a gestão de código para você. Este tutorial básico GIT irá ajudar qualquer desenvolvedor para começar a utilizar o GIT, que é um rigoroso (e muito útil) sistema de controle de versão com uma infinidade de recursos. Se quiser saber mais sobre comandos GIT, consulte nosso tutorial.
